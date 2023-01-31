@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnresolvableTag -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity"
+    android:background="@color/background">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/mailTextInput"
+        android:layout_width="800px"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint = "E-MAIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="@color/button"
+        app:boxStrokeColor="@color/button"
+        app:boxStrokeErrorColor="@color/error">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/passwordInput"
+        android:layout_below="@+id/mailTextInput"
+        app:passwordToggleEnabled="true"
+        android:layout_width="800px"
+        app:hintTextAppearance="@color/button"
+        app:passwordToggleTint="@color/button"
+        app:endIconDrawable="@drawable/show_hide"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint ="PASSWORD"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="@color/button"
+        app:boxStrokeColor="@color/button"
+        app:boxStrokeErrorColor="@color/error"
+        tools:ignore="Deprecated">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/promini"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.button.MaterialButton
+       android:layout_below="@+id/passwordInput"
+       android:id="@+id/loginBtn"
+       android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true"
+       android:layout_width="600px"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/button"
+       android:text="LOG IN"
+       android:textColor="@color/background"
+       app:cornerRadius="50px">
+
+   </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

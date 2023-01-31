@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DataActivity"
+    android:background="@color/background">
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUserData"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/button"
+        android:text="placeholder text lets üpdkjklfsddkvnm">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_below="@+id/tvUserData"
+        android:id="@+id/logoutBtn"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button"
+        android:text="LOG OUT"
+        android:textColor="@color/background"
+        app:cornerRadius="50px"
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

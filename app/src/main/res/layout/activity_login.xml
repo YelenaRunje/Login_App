@@ -11,7 +11,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="50dp"
-        android:id="@+id/mailTextInput"
+        android:id="@+id/emailInput"
         android:layout_width="800px"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="20dp"
         android:id="@+id/passwordInput"
-        android:layout_below="@+id/mailTextInput"
+        android:layout_below="@+id/emailInput"
         app:passwordToggleEnabled="true"
         android:layout_width="800px"
         app:hintTextAppearance="@color/button"

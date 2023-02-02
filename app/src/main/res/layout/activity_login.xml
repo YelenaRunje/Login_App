@@ -12,7 +12,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="50dp"
         android:id="@+id/emailInput"
-        android:layout_width="800px"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:hint = "E-MAIL"
@@ -32,7 +34,9 @@
         android:id="@+id/passwordInput"
         android:layout_below="@+id/emailInput"
         app:passwordToggleEnabled="true"
-        android:layout_width="800px"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
         app:hintTextAppearance="@color/button"
         app:passwordToggleTint="@color/button"
         app:endIconDrawable="@drawable/show_hide"
@@ -58,12 +62,15 @@
        android:id="@+id/loginBtn"
        android:layout_marginTop="20dp"
        android:layout_centerHorizontal="true"
-       android:layout_width="600px"
-       android:layout_height="wrap_content"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
        android:backgroundTint="@color/button"
        android:text="LOG IN"
+       android:textSize="15sp"
        android:textColor="@color/background"
-       app:cornerRadius="50px">
+       app:cornerRadius="50dp">
 
    </com.google.android.material.button.MaterialButton>
 

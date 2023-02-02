@@ -1,7 +1,7 @@
 package com.example.loginapp.network;
 
 public class JWTResponse {
-    private String token;
+    private final String token;
 
     public JWTResponse(String token) {
         this.token = token;

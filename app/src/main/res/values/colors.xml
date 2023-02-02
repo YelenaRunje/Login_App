@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="button">#8de0d1</color>
     <color name="background">#042040</color>
-    <color name="promini">#cdd2d9</color>
+    <color name="dirty_white">#cdd2d9</color>
     <color name="editText">#cdd2d9</color>
     <color name="error">#D36135</color>
 </resources>

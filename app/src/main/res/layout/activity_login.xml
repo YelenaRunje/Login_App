@@ -17,7 +17,7 @@
         android:layout_marginRight="30dp"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:hint = "E-MAIL"
+        android:hint = "@string/e_mail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:boxStrokeWidthFocused="2dp"
         app:hintTextColor="@color/button"
@@ -42,7 +42,7 @@
         app:endIconDrawable="@drawable/show_hide"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:hint ="PASSWORD"
+        android:hint ="@string/password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:boxStrokeWidthFocused="2dp"
         app:hintTextColor="@color/button"
@@ -53,7 +53,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/promini"
+            android:textColor="@color/dirty_white"
             android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,7 +67,7 @@
        android:layout_width="match_parent"
        android:layout_height="60dp"
        android:backgroundTint="@color/button"
-       android:text="LOG IN"
+       android:text="@string/log_in"
        android:textSize="15sp"
        android:textColor="@color/background"
        app:cornerRadius="50dp">

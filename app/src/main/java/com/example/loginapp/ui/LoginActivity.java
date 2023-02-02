@@ -34,7 +34,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private String email, password, appId;
     private SharedPreferences sharedPreferences;
+    //TODO : deprecated -> think of a replacement
     private ProgressDialog progressDialog;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,5 +100,6 @@ public class LoginActivity extends AppCompatActivity {
     private void saveToken(String token) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("token", token);
+        editor.apply();
     }
 }

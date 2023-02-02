@@ -8,35 +8,32 @@
     tools:context=".ui.DataActivity"
     android:background="@color/background">
 
-
+    <!-- TODO : consider more then one textview, one is enough but data representation is not pretty-->
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvUserData"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/button"
-        android:text="placeholder text lets üpdkjklfsddkvnm">
-
+        android:textColor="@color/button">
     </com.google.android.material.textview.MaterialTextView>
-
-
-
 
 
     <com.google.android.material.button.MaterialButton
         android:layout_below="@+id/tvUserData"
         android:id="@+id/logoutBtn"
         android:layout_marginTop="20dp"
+        android:textSize="15sp"
         android:layout_centerHorizontal="true"
-        android:layout_width="600px"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/button"
-        android:text="LOG OUT"
+        android:text="@string/log_out"
         android:textColor="@color/background"
-        app:cornerRadius="50px"
-        >
+        app:cornerRadius="50dp">
 
     </com.google.android.material.button.MaterialButton>
 

@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.loginapp.R;
 import com.example.loginapp.model.LoginResponse;
 import com.example.loginapp.network.LoginApi;
+import com.example.loginapp.network.RetrofitClient;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -30,7 +31,6 @@ public class DataActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
 
 
-    private Retrofit retrofit;
     private LoginApi loginApi;
 
     @Override
@@ -38,10 +38,13 @@ public class DataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data);
 
-        btnLogout=(Button)findViewById(R.id.logoutBtn);
-        tv_data =(TextView)findViewById(R.id.tvUserData);
+        btnLogout=findViewById(R.id.logoutBtn);
+        tv_data =findViewById(R.id.tvUserData);
 
         sharedPreferences = getSharedPreferences("shared_prefs", MODE_PRIVATE);
+
+        Retrofit retrofit = RetrofitClient.getRetrofitInstance();
+        loginApi = retrofit.create(LoginApi.class);
 
         getUser();
 
@@ -67,23 +70,23 @@ public class DataActivity extends AppCompatActivity {
                     // Handle HTTP error codes
                     if (response.code() == 400) {
                         // 400 - bad request
-                        tv_data.setText("Bad Request");
+                        tv_data.setText(R.string.errorRequest);
                     } else if (response.code() == 401) {
                         // 401 - not authorized
-                        tv_data.setText("Unauthorized");
+                        tv_data.setText(R.string.unauthorized);
                     } else if (response.code() == 404) {
                         // 404 - not found
-                        tv_data.setText("Not Found");
+                        tv_data.setText(R.string.notFound);
                     } else {
                         // generic error
-                        tv_data.setText("Error");
+                        tv_data.setText(R.string.error);
                     }
                 }
             }
 
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
-                tv_data.setText("Network Error");
+                tv_data.setText(R.string.error_networ);
             }
         });
     }
